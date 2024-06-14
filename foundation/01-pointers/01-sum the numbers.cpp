@@ -24,6 +24,7 @@
 // Sample Output 2 :
 // 7    
 
+
 int sum(int *ar , int n)
 {
     //write your code here

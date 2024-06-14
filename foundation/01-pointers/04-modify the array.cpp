@@ -25,6 +25,7 @@
 // Sample Output 2
 // 0 2 3 100
 
+
 void modify(int *ar,int n)
 {
 	//write your code here

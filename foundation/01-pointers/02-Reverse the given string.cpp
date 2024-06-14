@@ -41,6 +41,7 @@
 // Z@ted1
 // PuYx1$
 
+
 #include <cstring>
 void func(char *str) 
 {

@@ -23,6 +23,7 @@
 // Sample Output :
 // 4 3 2 1 
 
+
 void reverse(int *ar,int n)
 {
 	//write your code here
