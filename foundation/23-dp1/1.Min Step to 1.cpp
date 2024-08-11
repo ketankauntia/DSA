@@ -56,8 +56,11 @@ int cMinHelper(int n, int *arr){
         z=cMinHelper(n/3, arr);
     }
 
+    int steps = min(x, min(y,z))+1;
+    arr[n]=steps;
+
     //return
-    return min(x, min(y,z))+1;
+    return steps;
 }
 
 int countMinStepsToOne(int n)
