@@ -1,3 +1,5 @@
+## introduction-to-recursion
+
 a1
 ![alt text]({3BC89D88-B325-4CC3-A31D-FA1CB421DD61}.png)
 
@@ -19,3 +21,29 @@ a6
 ![alt text]({066DB3B7-BB69-4D2C-92EB-304CCCF85CB0}.png)
 
 a7
+![alt text]({B7E0E434-0181-4009-8E75-A7B8CFFA626A}.png)
+![alt text]({4D9D28DA-1C8E-4E65-9C55-4932FD4EC88F}.png)
+![alt text]({9DFD40F6-8E2D-4F31-8002-3BC7067A144C}.png)
+
+a8
+![alt text]({63ABEA93-00E0-4A06-9247-AC7B2A02027B}.png)
+![alt text]({7B7C686F-E60E-475B-9F6D-8B4C326AFD63}.png)
+
+
+
+## recursion-in-arrays
+
+b1
+![alt text]({2EE181CB-2D8F-4C9B-9FD9-DA84170551DB}.png)
+
+b2
+![alt text]({DD299F96-A6CA-4093-88AE-D267FAA0B325}.png)
+
+b3
+![alt text]({EDEA528C-2FFA-444A-85B5-EA5F45AC6707}.png)
+![alt text]({662FE0AF-7D56-4174-A002-9A8C8086EC89}.png)
+
+b4
+![alt text]({6C39F943-3793-44DD-A201-1C11A5846CA2}.png)
+
+b5
