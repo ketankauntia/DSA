@@ -87,3 +87,20 @@ d2
 ![alt text]({7EF4D734-8E6D-4486-8C22-FA46CC4A1C7B}.png)
 
 d3
+![alt text]({79C83A1E-82C9-47DA-9ACB-024977993209}.png)
+
+d4
+![alt text]({1A44A7EF-76F6-4414-8397-6D535DC5E940}.png)
+
+d5
+![alt text]({A83DA9D0-F50E-4CF0-BF19-36E1E789D588}.png)
+
+
+## Recursion Backtracking
+
+e1
+![alt text]({AC248831-925B-4A4C-8E0C-48F29AE5FF19}.png)
+![alt text]({C133F9C7-3B82-4537-A57A-C7A6D1CB04F9}.png)
+![alt text]({75018A51-718F-4439-818A-22CDE2B4608C}.png)
+
+e2
