@@ -12,33 +12,39 @@ public class C3_Get_Stairs_Path {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
 
-        ArrayList<String> paths = getStairPaths(n);
-        System.out.println(paths);
+        ArrayList<String> ans = getStairPaths(n);
+        System.out.println(ans);
         sc.close();
     }
 
     public static ArrayList<String> getStairPaths(int n) {
         
-        if(n == 0) {
-            ArrayList<String> bres = new ArrayList<>(); bres.add("");
-            return bres;
-        } else if(n<0){
-            ArrayList<String> bres = new ArrayList<>();
-            return bres;
+        if(n==0){
+            ArrayList<String> s1 = new ArrayList<>();
+            s1.add("");
+            return s1;
+        } else if(n<0){ //negative steps cannot be taken
+            ArrayList <String> s1 = new ArrayList<>();
+            return s1;
         }
-        
-        ArrayList<String> paths1 = getStairPaths (n - 1); ArrayList<String> paths2 = getStairPaths (n - 2); ArrayList<String> paths3= getStairPaths (n - 3); ArrayList<String> paths = new ArrayList<>();
-        
-        for(String path: paths1){
-            paths.add(1+ path);
+
+        //this gives all the possible paths for 1 step, 2 steps, 3 steps.
+        ArrayList <String> paths1 = getStairPaths(n-1);
+        ArrayList <String> paths2 = getStairPaths(n-2);
+        ArrayList <String> paths3 = getStairPaths(n-3);
+
+        ArrayList <String> finalPath = new ArrayList<>();
+
+        for(String p : paths1){
+            finalPath.add(1+p);
         }
-        for (String path: paths2){ 
-            paths.add(2+ path);
+        for(String p : paths2){
+            finalPath.add(2+p);
         }
-        for (String path: paths3){ 
-            paths.add(3+path);
+        for(String p : paths3){
+            finalPath.add(3+p);
         }
-        return paths;
+        return finalPath;
     }
 
 }
