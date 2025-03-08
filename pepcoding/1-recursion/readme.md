@@ -104,3 +104,12 @@ e1
 ![alt text]({75018A51-718F-4439-818A-22CDE2B4608C}.png)
 
 e2
+![alt text]({7B5BBF38-503C-4BC4-B812-A2A43D3DD7ED}.png)
+
+e3
+![alt text]({DCBC2C0C-9E9F-4D55-9935-ADE4396D5FFC}.png)
+
+e4 ( move knights in the chess board such that knight can occupy all the places in the chessboard. and print that option.)
+--
+
+<!-- FINISHED -->
