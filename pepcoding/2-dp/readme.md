@@ -41,3 +41,23 @@ a10
 ![alt text](./images/{D6C50B53-62DC-4E06-A35E-87C37AB0818F}.png)
 
 a11
+![alt text](./images/{6E3B322C-A931-4C7E-AD38-72B0BDF7A9F0}.png)
+![alt text](./images/{636930E3-1DDC-4B07-905E-37764672ED13}.png)
+
+a12
+![alt text](./images/{551F871B-7AE4-479E-9291-9F6A34B6CEE6}.png)
+no vod
+
+a13
+
+![alt text](./images/{E1896DDA-7C82-43E8-9764-BBBB6C25030E}.png)
+![alt text](./images/{F9BEC186-A9A5-4915-8282-5246339523D6}.png)
+
+a14
+![alt text](./images/{0AFDC723-6FE9-4A4E-9986-F139E5FF89ED}.png)
+![alt text](./images/{39B4163F-5FC6-41E9-94DB-DED001252961}.png)
+
+a15
+![alt text](./images/{87AED70B-DDB2-4D97-BF59-C26050A1839D}.png)
+![alt text](./images/{59291DD8-DBE8-4037-8CE2-48D735193B9C}.png)
+![alt text](./images/{2B81428F-0714-41D0-8350-21F13B08B7BC}.png)
