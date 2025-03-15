@@ -61,3 +61,12 @@ a15
 ![alt text](./images/{87AED70B-DDB2-4D97-BF59-C26050A1839D}.png)
 ![alt text](./images/{59291DD8-DBE8-4037-8CE2-48D735193B9C}.png)
 ![alt text](./images/{2B81428F-0714-41D0-8350-21F13B08B7BC}.png)
+
+a16
+![alt text](./images/{66EDB99E-1C65-4FC1-9109-12C9E5DDA30B}.png)
+![alt text](./images/{8798AB85-5135-49B4-A26A-5BAC5D852B31}.png)
+
+a17
+![alt text]({8498065E-9096-4514-82FB-84565E37A108}.png)
+![alt text]({E38D5772-29F3-45A3-85A4-6AF01AD4D72B}.png)
+
