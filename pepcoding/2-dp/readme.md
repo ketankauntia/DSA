@@ -67,6 +67,13 @@ a16
 ![alt text](./images/{8798AB85-5135-49B4-A26A-5BAC5D852B31}.png)
 
 a17
-![alt text]({8498065E-9096-4514-82FB-84565E37A108}.png)
-![alt text]({E38D5772-29F3-45A3-85A4-6AF01AD4D72B}.png)
+![alt text](./images/{8498065E-9096-4514-82FB-84565E37A108}.png)
+![alt text](./images/{E38D5772-29F3-45A3-85A4-6AF01AD4D72B}.png)
+![alt text](./images/{99E77072-918C-41FC-B542-3B64E47E636F}.png)
+
+a18
+![alt text](./images/{B24EE291-F28A-4EC9-97B9-469405FABBF9}.png)
+![alt text](./images/{54C10581-31A3-49B7-A9C9-C3ED4F9D4933}.png)
+
+
 
