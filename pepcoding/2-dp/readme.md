@@ -76,4 +76,18 @@ a18
 ![alt text](./images/{54C10581-31A3-49B7-A9C9-C3ED4F9D4933}.png)
 
 
+a19
+![alt text](./images/{1339F116-A8A6-4C37-993B-D5BA7C43A905}.png)
+![alt text](./images/{18DFE639-7A57-47E0-BB3F-BED93214D8C2}.png)
 
+a20
+![alt text](./images/{D870FD45-B09B-4EEE-95B1-DCB9BEFF236B}.png)
+![alt text](./images/{C903992A-7ACD-4B02-B8FA-6A6F90057A99}.png)
+
+a21
+![alt text](./images/{D195C74B-FCF7-4A48-B770-802F2DA73DDE}.png)
+![alt text](./images/{A534E50D-CB82-415A-B2A1-E5D42F93CAD8}.png)
+![alt text](./images/{910D184A-152C-460A-A666-6953B57D3B57}.png)
+![alt text](./images/{A213C607-AE6A-4A46-9237-2A2887E4B60D}.png)
+
+a22
