@@ -91,3 +91,12 @@ a21
 ![alt text](./images/{A213C607-AE6A-4A46-9237-2A2887E4B60D}.png)
 
 a22
+![alt text](./images/{5C63FFF2-0E56-4912-96FC-12C9A849CA92}.png)
+![alt text](./images/{505DE743-278E-4EE7-AFA5-B4936642D3A5}.png)
+
+a23
+![alt text](./images/{39520F69-200D-4257-BC8B-4F401B13C117}.png)
+![alt text](./images/{E275015C-F0B2-45B8-AB42-94DA9395B098}.png)
+![alt text](./images/{26C043E8-89C1-49F4-8E35-EC39BA880D6C}.png)
+
+a24
