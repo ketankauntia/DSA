@@ -100,3 +100,16 @@ a23
 ![alt text](./images/{26C043E8-89C1-49F4-8E35-EC39BA880D6C}.png)
 
 a24
+![alt text](./images/{EB793CC7-8473-4365-A553-55A632D5AE24}.png)
+![alt text](./images/{8A7CD1EE-6A7E-4377-A720-D72193A5D882}.png)
+![alt text](./images/{06C82A82-9B28-4345-9FA3-01248016D399}.png)
+
+a25
+![alt text](./images/{BA05A93D-860C-4570-9EE6-7144CFB46CE0}.png)
+![alt text](./images/{08253DA2-C964-4D98-8FB7-ED1FA3E0709F}.png)
+
+a26
+![alt text](./images/{A9A47888-C0E9-449E-A2C6-BF1AD902418F}.png)
+![alt text](./images/{01749F1F-E0B0-4B94-A17A-D5168EAD81AC}.png)
+
+a27

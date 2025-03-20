@@ -10,6 +10,14 @@
 // 1-24-3
 // 1-2-34
 
+// Sample Input
+// 4
+// 3
+
+// Sample Output
+// 6
+
+
 import java.io.*;
 import java.util.*;
 
@@ -17,6 +25,24 @@ public class A24_Partition_Into_Subsets {
         
     public static long partitionKSubset(int n, int k) {
         // write your code here
+
+        if(n==0 || k==0 || n<k){
+            return 0;
+        }
+
+        long[][] dp= new long[k+1][n+1];
+        for(int t=1;t<=k;t++){
+            for(int p=1;p<=n;p++){
+                if(p<t){
+                    dp[t][p]=0;
+                } else if(p==t){
+                    dp[t][p]=1;
+                } else{
+                    dp[t][p] = dp[t][p-1]*t + dp[t-1][p-1];
+                }
+            }
+        }
+        return dp[k][n];
     }
     
     public static void main(String[] args) throws Exception {
