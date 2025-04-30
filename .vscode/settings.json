@@ -1,4 +1,5 @@
 {
-    "terminal.integrated.defaultProfile.windows": "Command Prompt"
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    // "editor.defaultFormatter":"redhat.java"
   }
   
