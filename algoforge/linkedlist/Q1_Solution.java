@@ -10,6 +10,7 @@ package algoforge.linkedlist;
 //   }
 // };
 
+/*
 // Function to find the data of kth node from the end of a linked list.
 public class Q1_Solution {
   public:
@@ -43,3 +44,31 @@ public class Q1_Solution {
         return val;
     }
 };
+*/
+
+
+// In one pass using slow and fast pointer with difference of k pos.
+class Solution {
+  public:
+    int getKthFromLast(Node *head, int k) {
+        // Your code here
+        Node *slow = head;
+        Node *fast = head;
+        
+        int count =0;
+        while(count !=k){
+            if(fast==NULL){
+                return -1;
+            }
+            fast = fast->next;
+            count++;
+        }
+        
+        while(fast!=NULL){
+            fast = fast->next;
+            slow = slow->next;
+        }
+        return slow->data;
+    }
+};
+
