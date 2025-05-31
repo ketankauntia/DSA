@@ -31,11 +31,19 @@ class Solution{
         return slow;
     }
 
-    public ListNode reverseLL(ListNode head){
-        ListNode slow = head;
+    public ListNode reverseLL(ListNode head) {
+    ListNode prev = null;
+    ListNode curr = head;
 
-        return slow;
+    while (curr != null) {
+        ListNode next = curr.next;  // Saveing next node
+        curr.next = prev;           // Reversing the link
+        prev = curr;                // Moving prev forward
+        curr = next;                // Moving curr forward
     }
+
+    return prev;
+}
 
     public boolean isPalindrome(ListNode head){
 
@@ -50,8 +58,25 @@ class Solution{
         secHead = reverseLL(secHead);
 
         //compare both LL
+        ListNode ptr1 = mid;
+        ListNode ptr2 = secHead;
+        boolean ans = true;
 
-        //reverse again , join both 
+        while(ptr1!=null && ptr2!=null){
+            if(ptr1.val!=ptr2.val){
+                // return false; 
+                ans = false;
+                break;
+            }
+            ptr1=ptr1.next;
+            ptr2=ptr2.next;
+        }
+        
+        //reverse again , join both ( coz we need to keep the input as it is.)
+        secHead = reverseLL(secHead);
+        mid.next = secHead;
+
+        return ans;
 
     }
 
