@@ -106,5 +106,12 @@ public class Q18_reverse_nodes_in_even_length_groups {
         }
 
         return ohead;
+
+        for(int a = 1; a<b; ){
+            System.out.println(a);
+            break;
+        }
+        size -= curr_grp_size;
+        curr_grp_size++;
     }
 }
