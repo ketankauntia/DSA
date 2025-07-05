@@ -1,0 +1,45 @@
+import java.util.LinkedList;
+
+class Stack{
+    LinkedList<Integer> dataQue;
+
+    public Stack(){
+        dataQue = new LinkedList<>();
+    }
+
+    public void push(int value){
+        LinkedList<Integer> newDataQue = new LinkedList<>();
+        
+        newDataQue.add(value);
+        while(dataQue.size() > 0){
+            int removedValue = dataQue.removeFirst();
+            newDataQue.addLast(removedValue);
+        }
+
+        dataQue= newDataQue;
+    }
+    
+    public int peek(){
+        return dataQue.getFirst();
+    }
+    
+    public int pop(){
+        return dataQue.removeFirst();
+    }
+    
+    public int size(){
+        return dataQue.size();
+    }
+
+    public boolean empty() {
+        if(dataQue.size()<=0){
+            return true;
+        }
+        return false;
+    }
+}
+
+
+public class Q2_StackUsingQueuePopEfficient{
+
+}
