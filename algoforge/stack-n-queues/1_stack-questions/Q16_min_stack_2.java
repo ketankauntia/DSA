@@ -3,21 +3,21 @@
 // min stack using 1 stack and 1 constant.
 import java.util.Stack;
 class MinStack {
-    Stack<Integer> st; 
-    int minval;
+    Stack<Long> st; 
+    long minval = -1;
     public MinStack() {
         st  = new Stack<>();
-        minval = Integer.MAX_VALUE;
     }
     
     public void push(int val) {
         if(st.size()==0){
-            st.push(val);
+            st.push((long)val);
             minval = val;
         } else if(val>minval){  // greater values pushed as it is
-            st.push(val);
+            st.push((long)val);
         } else{                 // new min val is found
-            st.push(2 * val - minval);  // val+(val-min)
+            long updatedValue = 2 * (long)val - minval;
+            st.push(updatedValue);  // val+(val-min)
             minval = val;               // updating min
         }
     }
@@ -42,17 +42,17 @@ class MinStack {
             return -1;
         }
         if(st.peek() >= minval){  // val >minval. ok, pop it.
-            return st.peek();
-        } else{     // val<minval = modified value
-            return minval;  
+            return Math.toIntExact(st.peek());
+        }   // val<minval = modified value
+            return (int)minval;  
             // we used to get minval, and using this we used to modify the value to make a new smaller val.
             // but the value that we got originally was the new minvalue itself. so we return the minvalue.
-        }
+        
         
     }
     
     public int getMin() {
-        return minval;
+        return (int)minval;
     }
 }
 
