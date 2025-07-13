@@ -13,7 +13,24 @@ public class Q24_132_pattern {
             minSoFar[i] = Math.min(minSoFar[i-1], nums[i]);
         }
 
-        // iske baad ka kuch ni samajh aya :|
+        Stack<Integer> possibleKValue = new Stack<>();
+        possibleKValue.push(nums[n-1]);
+
+        for(int j=n-2; j>=0; j--){
+            int min = minSoFar[j];
+
+            while(possibleKValue.size()>0 && min >= possibleKValue.peek()){
+                possibleKValue.pop();
+            }
+
+            if(possibleKValue.size()>0 && nums[j] > possibleKValue.peek()){
+                return true;
+            }
+
+            possibleKValue.push(nums[j]);
+        }
+
+        return false;
     }
     
 }
