@@ -218,6 +218,101 @@ public class introduction {
         }
     }
 
+    // linearize a generic tree ( n^2 )
+    public static void linearize(Node node){
+        for(Node child:node.children){
+            linearize(child);
+        }
+
+        while(node.children.size() > 1){
+            Node lc = node.children.remove(node.children.size()-1); // last child
+            Node sl = node.children.get(node.children.size()-1); // second last child
+            Node slt = getTail(sl); // getting tail of second last
+            slt.children.add(lc);
+        }
+    }
+
+    private static Node getTail(Node node){
+        while(node.children.size() == 1){
+            node = node.children.get(0);
+        }
+        return node;
+    }
+
+    // linearize a generic tree ( efficient approach: O(n) )
+    // instead of looping nd cal last node, we store nd return
+    public static Node linearize2(Node node){
+        if(node.children.size() == 0){
+            return node;
+        }
+
+        // last ka tail
+        Node lkt = linearize2(node.children.get(node.children.size()-1));
+        while(node.children.size()>1){
+            Node last = node.children.remove(node.children.size()-1);
+            Node sl = node.children.get(node.children.size()-1);
+            Node slkt = linearize2(sl); // second last ka tail
+            slkt.children.add(last);
+        }
+        return lkt; 
+    }
+
+    // find value in a generic tree
+    public static boolean find(Node node, int data){
+
+        if(node.data == data){
+            return true;
+        }
+        for(Node child: node.children){
+            boolean findInChild = find(child, data);
+            if(findInChild == true){
+                return true;
+            }
+        }
+        return false;
+    }
+
+
+    // find node to root path ( heavily dependent on find value )
+    public static ArrayList<Integer> nodeToRootPath(Node node, int data){
+        if(node.data == data){
+            ArrayList<Integer> list = new ArrayList<>();
+            list.add(node.data);
+            return list;
+        }
+
+        for(Node child:node.children){
+            ArrayList<Integer> pathFromChild = nodeToRootPath(child, data);
+            if(pathFromChild.size()>0){
+                pathFromChild.add(node.data);
+                return pathFromChild;
+            }
+        }
+        return new ArrayList<>();
+    }
+
+    // Q : lowest common ancestor of 2 nodes in a generic tree ===========================
+    // lca is just 1 before the unequal banda we get from root to node
+    // store node to root path in [] for both nodes.
+    // so root se node tak traverse krke uncommon value jaise mile, ruk jao, piche wale pe jao jo common tha. wo lca h.
+    public static int lca(Node node, int d1, int d2){
+
+        ArrayList<Integer> p1 = nodeToRootPath(node, d1);
+        ArrayList<Integer> p2 = nodeToRootPath(node, d2);
+
+        int i = p1.size() - 1;
+        int j = p2.size() - 1;
+
+        while(i>=0 && j>=0 && p1.get(i)==p2.get(j)){
+            i--;
+            j--;
+        }
+        i++;
+        j++;
+
+        return p1.get(i);
+    }
+
     public static void main(String[] args) {
         
         int[] arr = {};
