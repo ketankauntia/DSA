@@ -44,7 +44,8 @@ public class P4_topological_sort {
             } else if(vis[nbr] == 2){ // nbr is already visited but not part of current path
                 continue;
             } else {
-                if(topo_dfs_generic(nbr,vis,graph,N,topologicalOrder) == false) return false;
+                if(topo_dfs_generic(nbr,vis,graph,N,topologicalOrder) == false) 
+                    return false;
             }
         }
 
