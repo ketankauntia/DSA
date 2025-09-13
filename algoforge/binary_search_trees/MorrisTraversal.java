@@ -82,4 +82,44 @@ class MorrisTraversal {
         }
         return ans;
     }
+
+
+    // Pre-order morris traversal ==========================================
+    // https://leetcode.com/problems/binary-tree-preorder-traversal/
+
+   public List<Integer> preorderTraversal(TreeNode root) {
+        
+        TreeNode curr = root;
+        List<Integer> ans = new ArrayList<>();
+
+        if(curr==null) return ans;
+
+        while(curr!=null){
+
+            if(curr.left == null){
+                // left empty h, right jana h.
+                ans.add(curr.val);
+                curr = curr.right;
+            } else{
+                //left side me ja rahe h.
+                
+                //rightmost find krke make link then update.
+                TreeNode rightMostNode = getRightMostELe(curr.left, curr);
+
+
+                //right is null then create thread link
+                if(rightMostNode.right == null){  
+                    ans.add(curr.val);  
+                    rightMostNode.right = curr;
+                    curr = curr.left;
+                } else{         // else remove thread
+                    rightMostNode.right = null;
+                    curr = curr.right;
+                }
+            }
+        }
+        return ans;
+    }
 }
+
+
